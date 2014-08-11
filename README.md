@@ -36,6 +36,8 @@ See diffs from this repo's config files vs InfluxDB upstreams (mostly file paths
 FPM Package
 ---
 
+Use FPM: https://github.com/jordansissel/fpm
+
 ```
 fpm --vendor InfluxDB \
     --license mit \
