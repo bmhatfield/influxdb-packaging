@@ -3,11 +3,11 @@ Packaging InfluxDB for Debian/Ubuntu
 
 Packaging Influx in a nutshell
 
-#. Build Influx
-#. Build Admin Site
-#. Create structure
-#. Update Configs
-#. FPM Package
+* Build Influx
+* Build Admin Site
+* Create structure
+* Update Configs
+* FPM Package
 
 Building InfluxDB
 ---
