@@ -1,0 +1,16 @@
+# Create InfluxDB User
+if ! id influxdb >/dev/null 2>&1; then
+    useradd --system -U -M influxdb
+fi
+
+# Create InfluxDB Data directories
+for i in raft db wal; do
+  mkdir -p /srv/influxdb/$i;
+done
+
+chown -R influxdb:influxdb /srv/influxdb
+
+# Create InfluxDB pid directory
+mkdir -p /var/run/influxdb
+
+chown -R influxdb:influxdb /var/run/influxdb
